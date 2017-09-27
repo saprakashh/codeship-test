@@ -1,5 +1,5 @@
 app:
-    build:
-        image: golang-test
-        dockerfile: Dockerfile
+  build:
+    image: golang-test
+    dockerfile: Dockerfile
 
