@@ -5,7 +5,6 @@
 - name: pwd step
   tag: master
   service: app
-  command: pwd
   steps:
     - command: pwd
     - command: ls
