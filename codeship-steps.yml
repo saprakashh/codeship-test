@@ -2,7 +2,11 @@
   tag: master
   service: app
   command: echo foo
-- name: hello world step
+- name: pwd step
   tag: master
   service: app
   command: pwd
+- name: ls step
+  tag: master
+  service: app
+  command: ls
