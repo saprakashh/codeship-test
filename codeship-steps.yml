@@ -2,10 +2,7 @@
   tag: master
   service: app
   command: echo foo
-- name: pwd step
+- name: run hello world step
   tag: master
   service: app
-  steps:
-    - command: pwd
-    - command: ls
- 
+  command: bash -c "cd src && go run hello_world.go" 
