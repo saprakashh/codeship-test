@@ -9,4 +9,4 @@
 - name: run Go tests
   tag: master
   service: app
-  command: bash -c "cd testfiles && go get github.com/stretchr/testify/assert && go test -v"
+  command: bash -c "cd /src/testfiles && go get github.com/stretchr/testify/assert && go test -v"
