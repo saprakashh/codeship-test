@@ -5,4 +5,4 @@
 - name: run hello world step
   tag: master
   service: app
-  command: bash -c "cd src && go run hello_world.go" 
+  command: bash -c "cd src && go run hello_world.go && go get github.com/stretchr/testify/assert && go test" 
