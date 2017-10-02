@@ -7,7 +7,7 @@ import (
 
 func TestIntCompare(t *testing.T) {
 	var num1 int = 45
-	var num2 int = 54
+	var num2 int = 45
 	assert.Equal(t, num1, num2, "The numbers are different")
 }
 
