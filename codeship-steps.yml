@@ -2,7 +2,11 @@
   tag: master
   service: app
   command: echo foo
-- name: run hello world step
+- name: build Go files
   tag: master
   service: app
-  command: bash -c "cd src && go run hello_world.go && cd testfiles && go get github.com/stretchr/testify/assert && go test" 
+  command: bash -c "cd src && go run hello_world.go"
+- name: run Go tests
+  tag: master
+  service: app
+  command: bash -c "cd testfiles && go get github.com/stretchr/testify/assert && go test -v"
